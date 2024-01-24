@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #222;
+}
+
+.card {
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    border-radius: 20px;
+    color: #fff;
+    margin: 100px auto 0;
+    max-width: 470px;
+    padding: 40px 35px;
+    text-align: center;
+    width: 90%;
+}
+
+.col {
+    align-items: center;
+    display: flex;
+    text-align: left;
+}
+
+.col img {
+    margin-right: 10px;
+    width: 40px;
+}
+
+.details {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    padding: 0 20px;
+}
+
+.error {
+    display: none;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 25px;
+    text-align: center;
+}
+
+.humidity, .wind {
+    font-size: 25px;
+    margin: -1px;
+}
+
+.search {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.search button {
+    background: #ebfffc;
+    border: 0;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 60px;
+    outline: 0;
+    width: 60px;
+}
+
+.search button img {
+    width: 25px;
+}
+
+.search input {
+    background: #ebfffc;
+    border: 0;
+    border-radius: 30px;
+    color: #555;
+    flex: 1;
+    font-size: 20px;
+    height: 60px;
+    margin-right: 20px;
+    outline: 0;
+    padding: 10px 25px;
+}
+
+.title {
+    animation: colorRotate 5s linear 0s infinite;
+    color: #00feba;
+    font-size: 30px;
+    margin-bottom: -50px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.weather {
+    display: none;
+}
+
+.weather h1 {
+    font-size: 80px;
+    font-weight: 500;
+}
+
+.weather h2 {
+    font-size: 45px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+
+.weather-icon {
+    margin-top: 30px;
+    width: 170px;
+}
+
+@keyframes colorRotate {
+    from {
+      color: #00feba;
+    }
+    25% {
+      color: #3c8dbc;
+    }
+    50% {
+      color: #5b548a;
+    }
+    75% {
+      color: #3c8dbc;
+    }
+    100% {
+      color: #00feba;
+    }
+}
